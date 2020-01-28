@@ -45,4 +45,5 @@ dependencies {
     implementation "com.google.android.material:material:$rootProject.materialVersion"
     // Testing
     androidTestImplementation "androidx.arch.core:core-testing:$rootProject.coreTestingVersion"
+
 }
