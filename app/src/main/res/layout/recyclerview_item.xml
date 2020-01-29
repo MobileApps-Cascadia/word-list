@@ -8,5 +8,7 @@
         style="@style/word_title"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/listItemAccent" />
+        android:text="TEXT"
+        android:textColor="@color/colorPrimary"
+        android:background="@android:color/holo_orange_light" />
 </LinearLayout>
