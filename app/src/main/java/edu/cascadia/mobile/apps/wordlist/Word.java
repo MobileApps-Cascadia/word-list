@@ -13,12 +13,11 @@ public class Word {
     @ColumnInfo(name = "word")
     private String mWord;
 
-    public Word(@NonNull String word){
+    public Word(String word) {
         this.mWord = word;
     }
 
     public String getWord(){
         return this.mWord;
     }
-
 }

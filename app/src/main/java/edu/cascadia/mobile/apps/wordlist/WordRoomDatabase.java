@@ -38,8 +38,9 @@ public abstract class WordRoomDatabase extends RoomDatabase {
                 dao.insert(word);
                 word = new Word("World");
                 dao.insert(word);
-                word = new Word("test");
+                word = new Word("TEST");
                 dao.insert(word);
+
             });
         }
     };
@@ -50,6 +51,7 @@ public abstract class WordRoomDatabase extends RoomDatabase {
                 if (INSTANCE == null) {
                     INSTANCE = Room.databaseBuilder(context.getApplicationContext(),
                             WordRoomDatabase.class, "word_database")
+                            .addCallback(sRoomDatabaseCallback)
                             .build();
                 }
             }
